@@ -14,4 +14,6 @@ file.on('line', (line) => {
     result += parseInt(numbers[0] + numbers[numbers.length - 1])
 });
 
-console.log(result)
+file.on('close', () => {
+    console.log(result);
+});
